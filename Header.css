@@ -1,0 +1,39 @@
+.Header{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+   background-color: rgba(0, 0, 0, 0.075);
+}
+
+.HeaderGroup{
+
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+
+.Header a{
+
+    color: white;
+    font-weight: 600;
+}
+
+
+@media (max-width: 640px){
+
+.Header{
+
+    padding: 15px 0;
+
+}
+
+.Header a:nth-child(4) {
+    display: none;
+}
+
+}
